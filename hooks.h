@@ -2,7 +2,7 @@
 
 #include <Windows.h>
 
-// Hook function declarations
+// Hook function declarations for intercepted system functions
 HMODULE WINAPI Hooks_LoadLibraryExW(LPCWSTR, HANDLE, DWORD);
 HMODULE WINAPI Hooks_LoadLibraryExW_SteamClient(LPCWSTR, HANDLE, DWORD);
 FARPROC WINAPI Hooks_GetProcAddress(HMODULE, LPCSTR);
